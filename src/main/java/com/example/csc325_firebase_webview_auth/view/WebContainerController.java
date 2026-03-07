@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import netscape.javascript.JSObject;
@@ -73,6 +74,26 @@ public class WebContainerController implements Initializable {
                    + "</body> "//
                    + "</html> "//
    ;
+    @FXML
+    private TextField emailField;
+    @FXML
+    private TextField passwordField;
+
+    @FXML
+    private void handleLogin(ActionEvent event) throws IOException {
+
+        App.setRoot("/files/AccessFBView.fxml");
+    }
+
+    @FXML
+    private void handleRegistrationMenu(ActionEvent event) throws IOException {
+
+        App.setRoot("/files/registration.fxml");
+    }
+    @FXML
+    private void handleLoginMenu(ActionEvent event) throws IOException {
+        App.setRoot("/files/login.fxml");
+    }
  
     @FXML
     Label label;
