@@ -10,12 +10,11 @@
     <children>
         <VBox alignment="CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <TextField fx:id="emailField" maxWidth="200.0" promptText="Email" />
-                <TextField fx:id="passwordField" maxWidth="200.0" promptText="Password" />
-                <Button onAction="#handleLogin" text="Login" />
-                <Button onAction="#handleRegistrationMenu" text="Register" />
+                <TextField fx:id="regEmailField" maxWidth="200.0" promptText="New Email" />
+                <TextField fx:id="regPasswordField" maxWidth="200.0" promptText="New Password" />
+                <Button onAction="#regRecord" text="Create Account" />
+                <Button onAction="#handleLoginMenu" text="Back to Login" />
             </children>
         </VBox>
     </children>
 </AnchorPane>
-

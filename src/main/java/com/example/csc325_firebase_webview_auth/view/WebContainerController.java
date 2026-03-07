@@ -4,6 +4,7 @@
  */
 package com.example.csc325_firebase_webview_auth.view;
 
+import com.google.firebase.auth.UserRecord;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Worker.State;
@@ -75,6 +76,26 @@ public class WebContainerController implements Initializable {
                    + "</html> "//
    ;
     @FXML
+    private TextField regEmailField;
+    @FXML
+    private TextField regPasswordField;
+    @FXML
+    private void handleRegistration(ActionEvent event) {
+
+        UserRecord.CreateRequest request = new UserRecord.CreateRequest()
+                .setEmail(regEmailField.getText())
+                .setPassword(regPasswordField.getText());
+
+        try {
+            App.fauth.createUser(request);
+            System.out.println("Successfully created new user!");
+            App.setRoot("/files/login.fxml");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     private TextField emailField;
     @FXML
     private TextField passwordField;
@@ -85,11 +106,7 @@ public class WebContainerController implements Initializable {
         App.setRoot("/files/AccessFBView.fxml");
     }
 
-    @FXML
-    private void handleRegistrationMenu(ActionEvent event) throws IOException {
 
-        App.setRoot("/files/registration.fxml");
-    }
     @FXML
     private void handleLoginMenu(ActionEvent event) throws IOException {
         App.setRoot("/files/login.fxml");

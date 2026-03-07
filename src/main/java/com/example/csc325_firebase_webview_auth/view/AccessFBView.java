@@ -21,9 +21,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class AccessFBView {
 
@@ -47,12 +45,31 @@ public class AccessFBView {
         return listOfUsers;
     }
 
+    @FXML
+    private TableView<Person> tableView;
+    @FXML
+    private TableColumn<Person, String> col_name;
+    @FXML
+    private TableColumn<Person, String> col_major;
+    @FXML
+    private TableColumn<Person, Integer> col_age;
+    @FXML
     void initialize() {
 
         AccessDataViewModel accessDataViewModel = new AccessDataViewModel();
         nameField.textProperty().bindBidirectional(accessDataViewModel.userNameProperty());
         majorField.textProperty().bindBidirectional(accessDataViewModel.userMajorProperty());
         writeButton.disableProperty().bind(accessDataViewModel.isWritePossibleProperty().not());
+    }
+
+    @FXML
+    private TextField emailField;
+    @FXML
+    private TextField passwordField;
+    @FXML
+    private void handleLogin(ActionEvent event) throws IOException {
+
+        App.setRoot("/files/AccessFBView.fxml");
     }
 
     @FXML
@@ -69,7 +86,17 @@ public class AccessFBView {
     private void regRecord(ActionEvent event) {
         registerUser();
     }
+    @FXML
+    private void handleLoginMenu(ActionEvent event) throws IOException {
 
+        App.setRoot("/files/WebContainer.fxml");
+    }
+
+    @FXML
+    private void handleRegistrationMenu(ActionEvent event) throws IOException {
+
+        App.setRoot("/com/example/csc325_firebase_webview_auth/registration.fxml");
+    }
      @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("/files/WebContainer.fxml");
@@ -157,4 +184,6 @@ public class AccessFBView {
         }
 
     }
+
+
 }

@@ -1,0 +1,24 @@
+
+.root {
+    -fx-background-color: #575454;
+}
+
+.header-brown {
+    -fx-background-color: #b8860b;
+}
+
+.button {
+    -fx-background-color: #b8860b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #32CD32;
+}
+
+.table-view {
+    -fx-border-color: #b8860b;
+    -fx-selection-bar: #32CD32;
+}
