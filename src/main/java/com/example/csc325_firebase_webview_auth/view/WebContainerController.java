@@ -111,7 +111,7 @@ public class WebContainerController implements Initializable {
         }
 
         try {
-            // Verify the user exists in Firebase Auth
+
             UserRecord userRecord = App.fauth.getUserByEmail(email);
             System.out.println("Login successful for user: " + userRecord.getEmail());
             App.setRoot("/files/AccessFBView.fxml");

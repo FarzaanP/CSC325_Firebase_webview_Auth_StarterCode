@@ -100,7 +100,7 @@ public class AccessFBView {
     }
     @FXML
     private void switchToRegistration(ActionEvent event) throws IOException {
-        // This loads the registration screen
+
         App.setRoot("/com/example/csc325_firebase_webview_auth/registration.fxml");
     }
      @FXML

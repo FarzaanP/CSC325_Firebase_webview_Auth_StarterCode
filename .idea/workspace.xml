@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="Added the registration page and connected the screens">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/AccessFBView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/AccessFBView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/WebContainerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/WebContainerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/key.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/registration.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/splashscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/splashscreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/key.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/key.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/splashscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/splashscreen.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="made some last minute changes and bugs got it to work and tested it by making a user and logging in, only thing that doesn't work is uploading an image." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +167,7 @@
       <workItem from="1772908823791" duration="66000" />
       <workItem from="1772908896920" duration="208000" />
       <workItem from="1772909107175" duration="4149000" />
-      <workItem from="1772913337500" duration="13434000" />
+      <workItem from="1772913337500" duration="13758000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -282,7 +265,31 @@
       <option name="project" value="LOCAL" />
       <updated>1772926462581</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finished the splashscreen">
+      <option name="closed" value="true" />
+      <created>1772929867845</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1772929867845</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finished the login and register page to now properly work the buttons now work as intended, and you can register and login with email and password">
+      <option name="closed" value="true" />
+      <created>1772929973140</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1772929973140</updated>
+    </task>
+    <task id="LOCAL-00015" summary="made some last minute changes and bugs got it to work and tested it by making a user and logging in, only thing that doesn't work is uploading an image.">
+      <option name="closed" value="true" />
+      <created>1772930058406</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772930058406</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +319,9 @@
     <MESSAGE value="Created the login page with basic email and password screen" />
     <MESSAGE value="updated it to allow the buttons to work from login" />
     <MESSAGE value="Added the registration page and connected the screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the registration page and connected the screens" />
+    <MESSAGE value="finished the splashscreen" />
+    <MESSAGE value="finished the login and register page to now properly work the buttons now work as intended, and you can register and login with email and password" />
+    <MESSAGE value="made some last minute changes and bugs got it to work and tested it by making a user and logging in, only thing that doesn't work is uploading an image." />
+    <option name="LAST_COMMIT_MESSAGE" value="made some last minute changes and bugs got it to work and tested it by making a user and logging in, only thing that doesn't work is uploading an image." />
   </component>
 </project>
