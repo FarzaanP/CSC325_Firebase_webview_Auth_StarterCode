@@ -102,16 +102,37 @@ public class WebContainerController implements Initializable {
 
     @FXML
     private void handleLogin(ActionEvent event) throws IOException {
+        String email = emailField.getText();
+        String password = passwordField.getText();
 
-        App.setRoot("/files/AccessFBView.fxml");
+        if (email.isEmpty() || password.isEmpty()) {
+            System.out.println("Email or password cannot be empty.");
+            return;
+        }
+
+        try {
+            // Verify the user exists in Firebase Auth
+            UserRecord userRecord = App.fauth.getUserByEmail(email);
+            System.out.println("Login successful for user: " + userRecord.getEmail());
+            App.setRoot("/files/AccessFBView.fxml");
+        } catch (Exception e) {
+            System.out.println("Login failed: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
+
+    @FXML
+    private void handleRegistrationMenu(ActionEvent event) throws IOException {
+        App.setRoot("/files/registration.fxml");
+    }
 
     @FXML
     private void handleLoginMenu(ActionEvent event) throws IOException {
         App.setRoot("/files/login.fxml");
     }
- 
+
+
     @FXML
     Label label;
     

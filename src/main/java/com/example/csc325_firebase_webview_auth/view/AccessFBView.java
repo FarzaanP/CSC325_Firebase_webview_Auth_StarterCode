@@ -22,6 +22,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class AccessFBView {
 
@@ -60,6 +61,12 @@ public class AccessFBView {
         nameField.textProperty().bindBidirectional(accessDataViewModel.userNameProperty());
         majorField.textProperty().bindBidirectional(accessDataViewModel.userMajorProperty());
         writeButton.disableProperty().bind(accessDataViewModel.isWritePossibleProperty().not());
+
+        col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        col_major.setCellValueFactory(new PropertyValueFactory<>("major"));
+        col_age.setCellValueFactory(new PropertyValueFactory<>("age"));
+
+        tableView.setItems(listOfUsers);
     }
 
     @FXML
@@ -91,10 +98,9 @@ public class AccessFBView {
 
         App.setRoot("/files/WebContainer.fxml");
     }
-
     @FXML
-    private void handleRegistrationMenu(ActionEvent event) throws IOException {
-
+    private void switchToRegistration(ActionEvent event) throws IOException {
+        // This loads the registration screen
         App.setRoot("/com/example/csc325_firebase_webview_auth/registration.fxml");
     }
      @FXML
@@ -186,4 +192,7 @@ public class AccessFBView {
     }
 
 
+    public void handleRegistrationMenu(ActionEvent event) {
+
+    }
 }

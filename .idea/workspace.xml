@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="updated it to allow the buttons to work from login">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/registration.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/styles.css" afterDir="false" />
+    <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="Added the registration page and connected the screens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/AccessFBView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/AccessFBView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/WebContainerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/WebContainerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/files/AccessFBView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/AccessFBView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/key.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/files/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/registration.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/splashscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/splashscreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/AccessFBView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController$Bridge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/WebContainerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/files/key.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/key.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/files/splashscreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/splashscreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +184,7 @@
       <workItem from="1772908823791" duration="66000" />
       <workItem from="1772908896920" duration="208000" />
       <workItem from="1772909107175" duration="4149000" />
-      <workItem from="1772913337500" duration="10043000" />
+      <workItem from="1772913337500" duration="13434000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -272,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772914067078</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added the registration page and connected the screens">
+      <option name="closed" value="true" />
+      <created>1772926462581</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772926462581</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +311,7 @@
     <MESSAGE value="Created the slpashscreen and put it into the App.java" />
     <MESSAGE value="Created the login page with basic email and password screen" />
     <MESSAGE value="updated it to allow the buttons to work from login" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated it to allow the buttons to work from login" />
+    <MESSAGE value="Added the registration page and connected the screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the registration page and connected the screens" />
   </component>
 </project>
